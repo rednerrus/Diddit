@@ -635,9 +635,9 @@
             font-size: 1.2rem;
             margin: 48px 0;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 16px;
-            max-width: 800px;
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -646,11 +646,14 @@
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 16px 20px;
+            padding: 20px;
             border-radius: var(--border-radius);
             font-weight: 500;
             text-align: left;
             transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            min-height: 80px;
         }
         
         .final-bullets li:hover {
@@ -709,6 +712,7 @@
             
             .final-bullets li {
                 text-align: center;
+                justify-content: center;
             }
             
             .comparison-table {
@@ -719,6 +723,20 @@
             .faq-answer {
                 padding-left: 20px;
                 padding-right: 20px;
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .final-bullets {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .final-bullets {
+                grid-template-columns: 1fr;
+                gap: 12px;
             }
         }
         
@@ -775,6 +793,11 @@
             <div class="hero-content">
                 <div class="eyebrow">For Tech-Savvy Procrastinators Who Need Accountability</div>
                 <h1>Stop Procrastinating Alone – Join Live Body Doubling Communities and Actually Get Things Done</h1>
+                <div class="hero-subtitle">
+                    <strong>Tired of staring at your laundry pile while scrolling endlessly?</strong> Procrastinating on simple tasks because you're working alone and unmotivated?
+                    <br><br>
+                    Diddit connects you with people doing the exact same tasks right now. Jump into d/laundry or d/dishes and get things done together.
+                </div>
                 <ul class="hero-bullets">
                     <li>Join live streams while doing laundry, dishes, or any task</li>
                     <li>Connect with motivated people in Reddit-style communities</li>
@@ -794,9 +817,6 @@
         <div class="container">
             <div class="lead-section">
                 <div class="usp">The only platform combining Reddit communities with live body doubling – advanced users are already crushing their to-do lists.</div>
-                <p><strong>Tired of staring at your laundry pile while scrolling endlessly?</strong> Procrastinating on simple tasks because you're working alone and unmotivated?</p>
-                <br>
-                <p>Diddit connects you with people doing the exact same tasks right now. Jump into d/laundry or d/dishes and get things done together.</p>
             </div>
         </div>
     </section>
