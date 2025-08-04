@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diddit - Stop Procrastinating Alone | Join Live Body Doubling Communities</title>
+    <meta name="description" content="Join live body doubling communities and actually get things done. Connect with motivated people while doing laundry, dishes, or any task. Free 5-day trial, no credit card required.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section {
+            padding: 60px 0;
+            background: white;
+            margin-bottom: 2px;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .eyebrow {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        
+        .hero-bullets {
+            list-style: none;
+            margin: 40px 0;
+            font-size: 1.2rem;
+        }
+        
+        .hero-bullets li {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .hero-bullets li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            margin: 20px 0;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .friction-remover {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 15px;
+        }
+        
+        .social-proof {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #333;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #444;
+        }
+        
+        .lead-section {
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        
+        .lead-section .usp {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .review {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .review-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .review-author {
+            font-weight: 600;
+            color: #667eea;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .benefit {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .benefit h4 {
+            font-size: 1.3rem;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .differentiators {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .differentiator {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .comparison-table {
+            overflow-x: auto;
+            margin: 40px 0;
+        }
+        
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .comparison-table td:first-child {
+            text-align: left;
+            font-weight: 500;
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+        }
+        
+        .step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .faq {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 30px;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .archetypes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .archetype {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .archetype h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .final-bullets {
+            list-style: none;
+            font-size: 1.2rem;
+            margin: 30px 0;
+        }
+        
+        .final-bullets li {
+            margin: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .final-bullets li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Above the Fold -->
+    <section class="hero">
+        <div class="container">
+            <div class="eyebrow">For Tech-Savvy Procrastinators Who Need Accountability</div>
+            <h1>Stop Procrastinating Alone  Join Live Body Doubling Communities and Actually Get Things Done</h1>
+            <ul class="hero-bullets">
+                <li>Join live streams while doing laundry, dishes, or any task</li>
+                <li>Connect with motivated people in Reddit-style communities</li>
+                <li>No judgment, just accountability and support</li>
+                <li>Complete tasks together in real-time</li>
+                <li>Build consistent habits with community power</li>
+            </ul>
+            <a href="#signup" class="cta-button">Join Free For 5 Days and Say You Diddit</a>
+            <div class="friction-remover">No Credit Card Required  Cancel Anytime</div>
+            <div class="social-proof">Loved by Advanced Users Who Finally Beat Procrastination</div>
+        </div>
+    </section>
+
+    <!-- Lead Section -->
+    <section class="section">
+        <div class="container">
+            <div class="lead-section">
+                <div class="usp">The only platform combining Reddit communities with live body doubling  advanced users are already crushing their to-do lists.</div>
+                <p><strong>Tired of staring at your laundry pile while scrolling endlessly?</strong> Procrastinating on simple tasks because you're working alone and unmotivated?</p>
+                <p>Diddit connects you with people doing the exact same tasks right now. Jump into d/laundry or d/dishes and get things done together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof Section -->
+    <section class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <h2>What Our Community Says</h2>
+            <div class="reviews">
+                <div class="review">
+                    <div class="review-text">"Finally did my laundry without putting it off for weeks!"</div>
+                    <div class="review-author"> Alex M.</div>
+                </div>
+                <div class="review">
+                    <div class="review-text">"The live community vibe makes boring tasks actually fun"</div>
+                    <div class="review-author"> Sam K.</div>
+                </div>
+                <div class="review">
+                    <div class="review-text">"Accountability without judgment  exactly what I needed"</div>
+                    <div class="review-author"> Jordan L.</div>
+                </div>
+            </div>
+            <div style="text-align: center; font-weight: 600; color: #667eea;">Trusted by Advanced Users, Growing Community of Doers</div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Transform Procrastination Into Progress</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <h4>Beat Isolation</h4>
+                    <p>Work alongside others instead of struggling alone</p>
+                </div>
+                <div class="benefit">
+                    <h4>Stay Accountable</h4>
+                    <p>Live streams keep you focused and on track</p>
+                </div>
+                <div class="benefit">
+                    <h4>Find Your Tribe</h4>
+                    <p>Connect with people who get the struggle</p>
+                </div>
+                <div class="benefit">
+                    <h4>Make Tasks Fun</h4>
+                    <p>Turn boring chores into social experiences</p>
+                </div>
+                <div class="benefit">
+                    <h4>Build Momentum</h4>
+                    <p>Complete one task, feel motivated for the next</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Power Differentiators -->
+    <section class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <h2>Why Diddit Actually Works</h2>
+            <div class="differentiators">
+                <div class="differentiator">
+                    <h4>Live Body Doubling</h4>
+                    <p>Real people, real tasks, real time</p>
+                </div>
+                <div class="differentiator">
+                    <h4>Reddit-Style Communities</h4>
+                    <p>Find your specific task tribe (d/laundry, d/dishes, etc.)</p>
+                </div>
+                <div class="differentiator">
+                    <h4>No Performance Pressure</h4>
+                    <p>Just show up and work alongside others</p>
+                </div>
+                <div class="differentiator">
+                    <h4>Zero Judgment Zone</h4>
+                    <p>Everyone's here to get stuff done, not judge</p>
+                </div>
+                <div class="differentiator">
+                    <h4>Instant Community</h4>
+                    <p>Jump in anytime  someone's always working</p>
+                </div>
+                <div class="differentiator">
+                    <h4>Habit Building</h4>
+                    <p>Consistent community support creates lasting change</p>
+                </div>
+            </div>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Diddit</th>
+                            <th>Other Apps</th>
+                            <th>Working Alone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Live Community</td>
+                            <td> Yes</td>
+                            <td>L No</td>
+                            <td>L No</td>
+                        </tr>
+                        <tr>
+                            <td>Task-Specific Groups</td>
+                            <td> Yes</td>
+                            <td>L No</td>
+                            <td>L No</td>
+                        </tr>
+                        <tr>
+                            <td>Real-Time Accountability</td>
+                            <td> Yes</td>
+                            <td>L Limited</td>
+                            <td>L No</td>
+                        </tr>
+                        <tr>
+                            <td>Social Connection</td>
+                            <td> Yes</td>
+                            <td>L Minimal</td>
+                            <td>L No</td>
+                        </tr>
+                        <tr>
+                            <td>No Judgment</td>
+                            <td> Yes</td>
+                            <td>L Varies</td>
+                            <td> Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+        <div class="container">
+            <h2>Three Simple Steps to Stop Procrastinating</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Join Your Community</h3>
+                    <p>Sign up and find your task (d/laundry, d/dishes, etc.) in under 2 minutes</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Go Live Together</h3>
+                    <p>Jump into a stream or start your own while doing the task</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get It Done</h3>
+                    <p>Work alongside others and actually complete what you started</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="section" style="background: #f8f9fa;">
+        <div class="container" style="text-align: center;">
+            <h2>Start Your 5-Day Procrastination Breakthrough</h2>
+            <div style="font-size: 1.2rem; line-height: 1.8; max-width: 600px; margin: 0 auto;">
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin: 15px 0; padding-left: 30px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #4CAF50; font-weight: bold; font-size: 1.5rem;"></span>
+                        Full access to all communities (d/laundry, d/dishes, and more)
+                    </li>
+                    <li style="margin: 15px 0; padding-left: 30px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #4CAF50; font-weight: bold; font-size: 1.5rem;"></span>
+                        Join unlimited live body doubling sessions
+                    </li>
+                    <li style="margin: 15px 0; padding-left: 30px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #4CAF50; font-weight: bold; font-size: 1.5rem;"></span>
+                        Start your own streams when you need accountability
+                    </li>
+                    <li style="margin: 15px 0; padding-left: 30px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #4CAF50; font-weight: bold; font-size: 1.5rem;"></span>
+                        Connect with motivated tech professionals like you
+                    </li>
+                    <li style="margin: 15px 0; padding-left: 30px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #4CAF50; font-weight: bold; font-size: 1.5rem;"></span>
+                        No credit card required  just sign up and start
+                    </li>
+                </ul>
+            </div>
+            <a href="#signup" class="cta-button">Join Free For 5 Days and Say You Diddit</a>
+            <div class="friction-remover">Zero risk, zero payment info needed</div>
+        </div>
+    </section>
+
+    <!-- About the Team -->
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2>Built by People Who Get It</h2>
+            <p style="font-size: 1.2rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">
+                We're tech professionals who struggled with the same procrastination and isolation you face. After trying every productivity hack, we realized the missing piece was real human connection during actual work. Diddit is our solution  and our advanced users are proof it works.
+            </p>
+        </div>
+    </section>
+
+    <!-- Social Proof with Intent -->
+    <section class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <h2>Find Your Accountability Tribe</h2>
+            <div class="archetypes">
+                <div class="archetype">
+                    <h4>Remote Worker Struggling with Household Tasks</h4>
+                    <p style="font-style: italic;">"I'd let dishes pile up for days. Now I just hop into d/dishes and knock them out with others. Game changer!"</p>
+                    <p><strong> Casey R.</strong></p>
+                </div>
+                <div class="archetype">
+                    <h4>Tech Professional Fighting Procrastination</h4>
+                    <p style="font-style: italic;">"Finally found people who understand the struggle. No weird motivation speak, just real accountability."</p>
+                    <p><strong> Morgan T.</strong></p>
+                </div>
+                <div class="archetype">
+                    <h4>Young Adult Building Life Skills</h4>
+                    <p style="font-style: italic;">"Adulting felt impossible until I found my laundry tribe. We make boring tasks actually social."</p>
+                    <p><strong> River D.</strong></p>
+                </div>
+                <div class="archetype">
+                    <h4>Freelancer Working from Home</h4>
+                    <p style="font-style: italic;">"The isolation was killing my productivity. Now I have accountability partners for everything."</p>
+                    <p><strong> Avery C.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="section">
+        <div class="container">
+            <h2>Got Questions? We've Got Answers</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Do I have to be on camera?</div>
+                    <div class="faq-answer">Nope! Participate at your comfort level  many people just audio or even text chat.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What if I'm judged for my messy space?</div>
+                    <div class="faq-answer">Everyone's here to work, not judge. We're all dealing with the same stuff  it's a judgment-free zone.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How much time do I need to commit?</div>
+                    <div class="faq-answer">Zero commitment required. Jump in for 10 minutes or 2 hours  whatever works for you.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is it really free for 5 days?</div>
+                    <div class="faq-answer">Completely free. No credit card, no hidden fees, no catches. Just sign up and start.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What if I don't know anyone?</div>
+                    <div class="faq-answer">That's the point! You'll meet people doing the same tasks. The community welcomes newcomers.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What tasks can I do?</div>
+                    <div class="faq-answer">Anything! Popular communities include laundry, dishes, cleaning, organizing, and more forming daily.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="signup">
+        <div class="container">
+            <h2>Ready to Beat Procrastination Together?</h2>
+            <ul class="final-bullets">
+                <li>Live body doubling with real people</li>
+                <li>Reddit-style communities for every task</li>
+                <li>5 days completely free</li>
+                <li>No judgment, just accountability</li>
+                <li>Advanced users already loving it</li>
+            </ul>
+            <a href="#" class="cta-button" onclick="handleSignup()">Join Free For 5 Days and Say You Diddit</a>
+            <div class="friction-remover">No Credit Card Required  Start in 60 Seconds</div>
+        </div>
+    </section>
+
+    <script>
+        function handleSignup() {
+            // Replace this with your actual signup logic
+            alert('Signup functionality would be integrated here with your backend/auth system');
+            // Example: window.location.href = 'https://app.diddit.com/signup';
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
